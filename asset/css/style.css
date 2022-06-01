@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    background-color: #000;
+}
+
+.header__nav {
+    line-height: 46px;
+}
+
+.header__nav > li > a {
+    font-size: 15px;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+
+.header__nav li {
+    position: relative;
+    display: inline-block;
+}
+
+.header__nav li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.header__nav li:hover a,
+.header__nav li:hover i {
+    color: #000;
+}
+
+.header__nav > li > a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.header__nav i {
+    color: #fff;
+    padding: 4px;
+}
+
+.header__nav--search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFF;
+    padding: 0 24px;
+    line-height: 46px;
+    font-size: 15px;
+}
+
+.header__nav--search:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.header__subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+}
+
+.header__subnav li {
+    display: block;
+    line-height: 38px;
+
+}
+
+.header__subnav a {
+    text-decoration: none;
+    padding: 0 12px;
+
+}
+
+.header__nav li:hover .header__subnav {
+    display: block;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+}
+
+.slider__img img {
+    width: 100%;
+}
+
+#slider .slider__content {
+    position: absolute;
+    color: #FFF;
+    padding: 32px 16px;
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.slider__content h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.slider__content p {
+    margin: 15px 0;
+}
+
